@@ -1,1 +1,1 @@
-# carmax
+# automax

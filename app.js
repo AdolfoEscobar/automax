@@ -4,7 +4,7 @@ const fs = require('fs');
 http.createServer((request, response)=>{
     const file = request.url == '/' ? 
     './automax/index.html' : `./automax/${request.url}`;
-    if(request.url == '/registro'){
+    if(request.url == '/formulario'){
         let data = [];
         request.on("data", value =>{
             data.push(value);

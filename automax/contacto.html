@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medios de contacto</title>
+    <title>Contacto | Automax</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Medios de contacto</h1>
+    <nav>
+        <div class="logo">Automax</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acercadenosotros.html">Acerca de nosotros</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <section class="contact-info">
+        <h2>Encuéntranos</h2>
+        <p>Dirección: Av. Principal 123, Chihuahua, México</p>
+        <p>Teléfono: +52 614 123 4567</p>
+        <p>Email: contacto@automax.com</p>
+        <br>
+        <h2>Horario de Atención</h2>
+        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+        <p>Sábado: 9:00 AM - 2:00 PM</p>
+        <p>Domingo: Cerrado</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Formulario de contacto</h2>
+        <form action="/formulario" method="POST">
+            <label for="correo">Correo</label>
+            <input id="correo" type="email" name="correo" required />
+            <br>
+            <br>
+            <label for="celular">Celular</label>
+            <input id="celular" type="tel" name="celular" required />
+            <br>
+            <br>
+            <label for="fecha-entrega">Fecha de entrega</label>
+            <input id="fecha-entrega" type="date" name="fecha-entrega" required />
+            <br>
+            <br>
+            <label for="fecha-devolucion">Fecha de devolución</label>
+            <input id="fecha-devolucion" type="date" name="fecha-devolucion" required />
+            <br>
+            <br>
+            <input id="submit" type="submit" name="submit" value="Enviar">
+        </form>
+    </section>
 </body>
 </html>

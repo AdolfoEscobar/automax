@@ -39,6 +39,9 @@ http.createServer((request, response)=>{
                 case 'css':
                     response.writeHead(200, {"Content-Type":"text/css"});
                 break;
+                case 'js':
+                    response.writeHead(200, {"Content-Type":"text/javascript"});
+                break;
 
             }
             response.write(data);

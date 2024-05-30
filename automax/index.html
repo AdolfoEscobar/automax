@@ -5,32 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automax | Renta de vehiculos</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="logo">Automax</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="acercadenosotros.html">Acerca de nosotros</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
 
-    <h1>Automax</h1>
-    <h2>Compañia ubicada en Chihuahua Capital especializada en la renta de autos</h2>
-    <a href="contacto.html">Contactanos</a>
-    <br>
-    <a href="acercadenosotros.html">Acerca de nosotros</a>
-    <br>
-    <a href="ferrari.html">Ferrari</a>
-    <br>
-    <a href="lamborghini.html">Lamborghini</a>
-    <br>
-    <a href="aston.html">Aston Martin</a>
-    
-    <p>Formulario de contacto</p>
+    <header>
+        <h1>Automax</h1>
+        <h2>LA MEJOR EXPERIENCIA DE RENTA DE AUTOS EN CHIHUAHUA</h2>
+        <p>
+            Renta un auto de alta gama con Automax. Contamos con el mejor servicio de Rentas de Autos en Chihuahua con 2 oficinas ubicadas en diferentes puntos importantes de la ciudad. Encuentra la ubicación que mejor te convenga y renta un auto en Chihuahua con National.
+            Chihuahua es el estado más grande de la República Mexicana, por tal, ofrece una diversidad de paisajes, con una amplia variedad de actividades. En el centro encontrarás su Plaza Mayor, el Tempo de San Francisco, museos como el Museo de Arte Contemporáneo, Museo de Paleontología, entre otros.
+            Al norte puedes encontrarte con grandes grutas con formaciones de estalactitas y estalagmitas, y pinturas rupestres como en la Zona Arqueológica Ojos del Chuviscar. ¡Te invitamos a rentar un auto y descubrir las maravillas de Chihuahua!
+        </p>
+    </header>
 
-    <form action="/formulario" method="POST">
-        <label for="correo">Correo</label>
-        <input id="correo" type="text" name="correo" />
-        <br>
-        <label for="celular">Celular</label>
-        <input id="celular" type="text" name="celular" />
-        <br>
-        <input type="submit">
-    </form>
+    <section class="vehicles">
+        <h2>Vehículos Disponibles</h2>
+        <ul class="vehicle-list">
+            <li>
+                <a href="ferrari.html">
+                    <img src="./images/ferrari.jpg" alt="Ferrari">
+                    <p>Ferrari</p>
+                </a>
+            </li>
+            <li>
+                <a href="lamborghini.html">
+                    <img src="./images/lamborghini.jpg" alt="Lamborghini">
+                    <p>Lamborghini</p>
+                </a>
+            </li>
+            <li>
+                <a href="aston.html">
+                    <img src="./images/aston.jpg" alt="Aston Martin">
+                    <p>Aston Martin</p>
+                </a>
+            </li>
+            <li>
+                <img src="./images/porsche.jpg" alt="Porsche">
+                <p>Porsche</p>
+            </li>
+            <li>
+                <img src="./images/bmw.jpg" alt="BMW">
+                <p>BMW</p>
+            </li>
+            <li>
+                <img src="./images/mercedes.jpg" alt="Mercedes-Benz">
+                <p>Mercedes-Benz</p>
+            </li>
+            <li>
+                <img src="./images/audi.jpg" alt="Audi">
+                <p>Audi</p>
+            </li>
+            <li>
+                <img src="./images/jaguar.jpg" alt="Jaguar">
+                <p>Jaguar</p>
+            </li>
+        </ul>
+    </section>
 
+    <section class="contact-form">
+        <h2>Formulario de contacto</h2>
+        <form action="/formulario" method="POST">
+            <label for="correo">Correo</label>
+            <input id="correo" type="email" name="correo" required />
+            <br>
+            <br>
+            <label for="celular">Celular</label>
+            <input id="celular" type="tel" name="celular" required />
+            <br>
+            <br>
+            <label for="fecha-entrega">Fecha de entrega</label>
+            <input id="fecha-entrega" type="date" name="fecha-entrega" required />
+            <br>
+            <br>
+            <label for="fecha-devolucion">Fecha de devolución</label>
+            <input id="fecha-devolucion" type="date" name="fecha-devolucion" required />
+            <br>
+            <br>
+            <input id="submit" type="submit" name="submit" value="Enviar">
+        </form>
+    </section>
 </body>
 </html>

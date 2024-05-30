@@ -1,15 +1,175 @@
 * {
-    font-family: Arial;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #f0a500;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1e90ff;
+    color: white;
+}
+
+header h1 {
     font-size: 50px;
-    color: blue;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.vehicles {
+    padding: 20px;
+    background: #fff;
     text-align: center;
 }
 
-h2 {
-    font-size: 20px;
-    font-weight: lighter;
+.vehicles h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.vehicle-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.vehicle-list li {
+    margin: 10px;
     text-align: center;
+    width: 200px; /* Ajusta el ancho del contenedor de cada vehículo */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-list li:hover {
+    transform: scale(1.05);
+}
+
+.vehicle-list img {
+    width: 100%;  /* Ajusta la imagen al 100% del ancho del contenedor */
+    height: 150px;  /* Establece la altura fija */
+    object-fit: cover; /* Corta la imagen para ajustarse al tamaño especificado */
+}
+
+.vehicle-list a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.vehicle-list a:hover {
+    color: #1e90ff;
+}
+
+.vehicle-list p {
+    margin-top: 5px; /* Añade un pequeño margen superior para separar el texto de la imagen */
+    font-weight: bold;
+}
+
+.contact-form {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    background: #f9f9f9;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
 }

@@ -47,7 +47,7 @@ Docker Hub: [adolfoescobar/automax:](https://hub.docker.com/r/adolfoescobar/auto
    ```bash
    http://localhost:8888/formulario_data.txt
 
-##Contribución
+## Contribución
 Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 
 Haz un fork del repositorio.

@@ -34,12 +34,17 @@ Docker Hub: [adolfoescobar/automax:](https://hub.docker.com/r/adolfoescobar/auto
    ```bash
    sudo docker build -t adolfoescobar/automax:etiqueta .
 
-4. Construye la imagen de Docker:
+4. Construye la imagen de Docker o corre la aplicacion con node:
    ```bash
    sudo docker run -d --name automax_container -p 8888:8888 adolfoescobar/automax:etiqueta
+   node app.js
    
 5. Accede al puerto del servidor:
    ```bash
    http://localhost:8888
+   
+5. Verifica los datos desde la imagen de docker:
+   ```bash
+   http://localhost:8888/formulario_data.txt
 
 

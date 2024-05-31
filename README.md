@@ -30,11 +30,11 @@ Docker Hub: [adolfoescobar/automax:](https://hub.docker.com/r/adolfoescobar/auto
    ```bash
    cd automax
 
-3. Construye la imagen de Docker:
+3. Haz pull de la imagen de Docker:
    ```bash
-   sudo docker build -t adolfoescobar/automax:etiqueta .
+   sudo docker pull adolfoescobar/automax
 
-4. Construye la imagen de Docker o corre la aplicacion con node:
+4. Corre la imagen de Docker/Corre la aplicacion con node donde tengas clonado el repositorio:
    ```bash
    sudo docker run -d --name automax_container -p 8888:8888 adolfoescobar/automax:etiqueta
    node app.js

@@ -7,7 +7,7 @@ Este repositorio contiene una aplicación web simple para la gestión de renta d
 Automax es una plataforma web que ofrece servicios de renta de vehículos de alta gama en la ciudad de Chihuahua. La aplicación permite a los usuarios explorar los vehículos disponibles, enviar consultas a través de un formulario de contacto y recibir confirmación de la renta.
 
 ## Link Docker
-Docker Hub: adolfoescobar/automax: Aquí puedes encontrar la imagen de Docker para la aplicación Automax.
+Docker Hub: [adolfoescobar/automax:](https://hub.docker.com/r/adolfoescobar/automax) Aquí puedes encontrar la imagen de Docker para la aplicación Automax.
 
 ## Características
 
